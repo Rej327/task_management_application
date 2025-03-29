@@ -1,0 +1,46 @@
+.toast {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    min-width: 200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    margin-bottom: 10px;
+    animation: slideInOut 4s forwards;
+}
+
+/* Slide-in and fade-out animation */
+@keyframes slideInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.toast-update {
+    background-color: #28a745; /* Green for success */
+    color: white;
+}
+
+.toast-add {
+    background-color: #007bff; /* Blue for add success */
+    color: white;
+}
+
+.toast-delete {
+    background-color: #dc3545; /* Red for delete success */
+    color: white;
+}
